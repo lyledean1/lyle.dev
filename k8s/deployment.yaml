@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lyle-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lyle-dev
+  template:
+    metadata:
+      labels:
+        app: lyle-dev
+    spec:
+      containers:
+        - name: lyle-dev
+          image: docker.io/lyled/lyle-dev
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+              protocol: TCP
