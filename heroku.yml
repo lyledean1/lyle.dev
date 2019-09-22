@@ -1,3 +1,5 @@
 build:
   docker:
     lyledev: Dockerfile
+run:
+  lyledev: ./lyle-dev
