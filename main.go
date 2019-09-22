@@ -9,7 +9,7 @@ import (
 func getPort() string {
 	port := os.Getenv("PORT")
 	if port == "" {
-		return ":8080"
+		return ":3000"
 	}
 	return ":" + port
 }
