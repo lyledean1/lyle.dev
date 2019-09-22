@@ -1,1 +1,1 @@
-web: ./lyle-dev
+lyledev: ./lyle-dev
