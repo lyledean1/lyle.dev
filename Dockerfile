@@ -16,8 +16,4 @@ COPY --from=build /go/bin/lyle-dev .
 
 COPY ./public public
 
-COPY ./Procfile Procfile
-
-EXPOSE 8080
-
 CMD ["./lyle-dev"]
