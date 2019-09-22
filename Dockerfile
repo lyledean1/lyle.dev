@@ -16,4 +16,6 @@ COPY --from=build /go/bin/lyle-dev .
 
 COPY ./public public
 
+COPY ./Procfile Procfile
+
 CMD ["./lyle-dev"]
