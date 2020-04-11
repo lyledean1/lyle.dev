@@ -50,7 +50,7 @@ spec:
         command: ["cloudflared", "tunnel"]
         args:
         - --url=http://127.0.0.1:8080
-        - --hostname=test.lyle.dev
+        - --hostname=lyle.dev
         - --origincert=/etc/cloudflared/cert.pem
         - --no-autoupdate
         env:
