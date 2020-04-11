@@ -1,15 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: lyle-dev
   labels:
-    app: lyle-dev
+    app: lyle-dev-web
+  name: lyle-dev-web
 spec:
-  type: NodePort
   ports:
-    - port: 8080
-      protocol: TCP
-      targetPort: 8080
-      nodePort: 31111
+  - name: http
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
   selector:
-    app: lyle-dev
+    app: lyle-dev-web
